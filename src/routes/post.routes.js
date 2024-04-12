@@ -10,7 +10,7 @@ const getAllPostsController = new GetAllPostsController();
 
 const postRoutes = Router();
 
-postRoutes.post('/create', authenticateToken.authenticate.bind(authenticateToken) ,createPostController.handle);
+postRoutes.post('/create', authenticateToken.authenticate.bind(authenticateToken), createPostController.handle);
 postRoutes.get('/', getAllPostsController.handle);
 
 export { postRoutes };
