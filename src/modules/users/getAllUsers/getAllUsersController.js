@@ -1,4 +1,5 @@
 import { GetAllUsers } from "./getAllUsers.js";
+import { AppError } from '../../../errors/appError.js';
 
 export class GetAllUsersController {
     async handle(req, res) {
